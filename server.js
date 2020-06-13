@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require("path");
 const waiting = require("./Develope/js/waitlist")
 const reservation = require("./Develope/js/reservation")
 const app = express();
@@ -15,7 +16,13 @@ const PORT = 3000;
   
 
 app.get("/reservation", function (req, res) {
-    res.json(reservation);//json data
+    res.sendFile(path.join(__dirname,  "viewReservation.html"));
+
+});
+
+app.get("/createReservation", function (req, res) {
+    res.sendFile(path.join(__dirname,  "createReservation.html"));
+
 });
 
 app.listen(PORT, function () {
