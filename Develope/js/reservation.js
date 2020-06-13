@@ -1,9 +1,9 @@
 const reservation = [
     {
-        id: "3",
         name: "Me",
-        email: "me@yahoo.com",
-        phone: "480-423-5234"
+        phoneNumber: "480-423-5234",
+        emailAddress: "me@yahoo.com",
+        uniqueID: "123"
     }
 ]
 
