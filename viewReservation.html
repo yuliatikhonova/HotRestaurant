@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css"></link>
+    <title>View Reservations</title>
 </head>
-<body>
-    
+<body class="container">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Hot Restaurant</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Home</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./createReservation.html">Make Reservation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">View Tables <span class="sr-only">(current)</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <main class="bg-dark">
+        <div class="card text-white bg-primary mb-3">
+            <div class="card-header">Current Reservations</div>
+            <div class="card-body">
+                <ul class="list-group" id="currentReservations">
+
+                </ul>
+            </div>
+          </div>
+          <div class="card text-white bg-primary mb-3">
+            <div class="card-header">Waiting List</div>
+            <div class="card-body">
+                <ul class="list-group" id="waitingList">
+
+                </ul>
+            </div>
+          </div>
+    </main>
 </body>
 </html>
